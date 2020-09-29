@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@font-face {
+  font-family: AquireBold;
+  src: url("../fonts/aquirebold.otf");
+}
+@font-face {
+  font-family: NunitoBold;
+  src: url("../fonts/nunito-bold.ttf");
+}
+
+@font-face {
+  font-family: NunitoRegular;
+  src: url("../fonts/nunito-regular.ttf");
+}
+
+body {
+  background-image: linear-gradient(
+    115.77874105367482deg,
+    rgba(62, 64, 66, 1) 4.28515625%,
+    rgba(71, 84, 99, 1) 48.608072916666664%
+  );
+  font-family: NunitoRegular, sans-serif;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.logo {
+  font-family: AquireBold, sans-serif;
+  font-size: 35px;
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
+
+.contact-number {
+  font-size: 20px;
+  color: white;
+  &:hover {
+    color: white;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+  }
+}
+.header .menu-container .menu .menu-item.active {
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+  border-bottom: 1px solid white;
+}
+
+.header.sticky {
+  background-image: linear-gradient(
+    112.99284058064791deg,
+    rgba(51, 69, 79, 1) 4.927083333333334%,
+    rgba(31, 41, 47, 1) 97.84374999999999%
+  );
+  padding: 20px;
+}
+.title {
+  font-family: NunitoBold, sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  color: white;
+}
+
+.paragraph {
+  font-weight: 16px;
+  line-height: 1.2;
+  color: white;
+}
+
+.header {
+  padding: 40px 0;
+  width: 100%;
+  //
+  border-bottom: 1px solid white;
+  position: fixed;
+  transition: 0.6s;
+  .page-container {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-container {
+    .menu {
+      .menu-item {
+        font-size: 16px;
+        line-height: 1.2;
+        color: white;
+        margin: 0 10px;
+        border-bottom: 1px solid transparent;
+        &:hover {
+          color: white;
+          text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+}
+
+.promo {
+  padding-top: 150px;
+  padding-bottom: 70px;
+  .page-container {
+    align-items: center;
+    .promo-img {
+      img {
+        width: 550px;
+      }
+    }
+    .promo-text {
+      .title {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
