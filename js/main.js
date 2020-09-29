@@ -7,6 +7,6 @@ $(document).ready(() => {
 
   //iTyped
   ityped.init(document.querySelector(".ityped"), {
-    strings: ["лікарі", "пацієнти"],
+    strings: ["пацієнти", "колеги"],
   });
 });
